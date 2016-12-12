@@ -25,6 +25,8 @@ Partial Class Home
         Me.btnSubmitContract = New System.Windows.Forms.Button()
         Me.lblUserLogged = New System.Windows.Forms.Label()
         Me.btnTracker = New System.Windows.Forms.Button()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnSubmitContract
@@ -56,17 +58,29 @@ Partial Class Home
         Me.btnTracker.Text = "Contract Tracking"
         Me.btnTracker.UseVisualStyleBackColor = True
         '
+        'DataGridView1
+        '
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(121, 39)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.RowHeadersVisible = False
+        Me.DataGridView1.Size = New System.Drawing.Size(1015, 649)
+        Me.DataGridView1.TabIndex = 4
+        '
         'Home
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.Control
         Me.ClientSize = New System.Drawing.Size(1148, 700)
+        Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.btnTracker)
         Me.Controls.Add(Me.lblUserLogged)
         Me.Controls.Add(Me.btnSubmitContract)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "Home"
         Me.Text = "Corporate Contracting Application Dashboard"
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -75,4 +89,5 @@ Partial Class Home
     Friend WithEvents btnSubmitContract As Button
     Friend WithEvents lblUserLogged As Label
     Friend WithEvents btnTracker As Button
+    Friend WithEvents DataGridView1 As DataGridView
 End Class

@@ -33,36 +33,37 @@ Partial Class Tracker_Contracts
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Location = New System.Drawing.Point(12, 46)
         Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.RowHeadersVisible = False
-        Me.DataGridView1.Size = New System.Drawing.Size(916, 502)
+        Me.DataGridView1.Size = New System.Drawing.Size(1036, 502)
         Me.DataGridView1.TabIndex = 0
         '
         'btnSearch
         '
-        Me.btnSearch.Location = New System.Drawing.Point(205, 12)
+        Me.btnSearch.Location = New System.Drawing.Point(321, 14)
         Me.btnSearch.Name = "btnSearch"
-        Me.btnSearch.Size = New System.Drawing.Size(75, 23)
+        Me.btnSearch.Size = New System.Drawing.Size(75, 20)
         Me.btnSearch.TabIndex = 1
         Me.btnSearch.Text = "Search"
         Me.btnSearch.UseVisualStyleBackColor = True
         '
         'txtSearch
         '
-        Me.txtSearch.Location = New System.Drawing.Point(13, 14)
+        Me.txtSearch.Location = New System.Drawing.Point(12, 14)
         Me.txtSearch.Name = "txtSearch"
-        Me.txtSearch.Size = New System.Drawing.Size(173, 20)
+        Me.txtSearch.Size = New System.Drawing.Size(303, 20)
         Me.txtSearch.TabIndex = 2
         '
-        'Form1
+        'Tracker_Contracts
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(940, 560)
+        Me.ClientSize = New System.Drawing.Size(1060, 560)
         Me.Controls.Add(Me.txtSearch)
         Me.Controls.Add(Me.btnSearch)
         Me.Controls.Add(Me.DataGridView1)
-        Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Name = "Tracker_Contracts"
+        Me.Text = "CCAD - Contract Tracking"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

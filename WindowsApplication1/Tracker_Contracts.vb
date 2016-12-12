@@ -16,7 +16,7 @@ Public Class Tracker_Contracts
         dataFile = "P:\NewSystem\tracking_db.accdb" ' change to access database location on your computer
         connString = provider & dataFile
         myConnection.ConnectionString = connString
-        da = New OleDbDataAdapter("Select [STATUS], [VENDOR], [CATEGORY], [EXPDATE], [MEDITRACT], [CONTRACT_TYPE], [PHYS_CHAMPION], [NOTES] from tbl_contracts", myConnection)
+        da = New OleDbDataAdapter("Select [CCG], [STATUS], [VENDOR], [CATEGORY], [EXPDATE], [MEDITRACT], [CONTRACT_TYPE], [PHYS_CHAMPION], [NOTES], [VAT] from tbl_contracts", myConnection)
         da.Fill(ds, "Items")
         ' replace "items" with the name of the table
         ' replace [Item Code], [Description], [Price] with the columns headers
@@ -24,6 +24,7 @@ Public Class Tracker_Contracts
         source1.DataSource = view1
         DataGridView1.DataSource = view1
         DataGridView1.Refresh()
+        Me.AcceptButton = btnSearch
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnSearch.Click
